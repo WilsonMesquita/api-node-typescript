@@ -4,13 +4,13 @@ import {
   NotFoundException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Role } from 'src/modules/role/entities/role.entity';
+import { Role } from '../../role/entities/role.entity';
 import { getConnection } from 'typeorm';
 import { MapperService } from '../../../shared/mapper.service';
 import { UserDto } from '../dto/user.dto';
 import { UserDetails } from '../entities/user.details.entity';
 import { User } from '../entities/user.entity';
-import { UserRepository } from '../repositoris/user.repository';
+import { UserRepository } from '../repositories/user.repository';
 
 @Injectable()
 export class UserService {
