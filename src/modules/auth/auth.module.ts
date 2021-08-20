@@ -32,6 +32,5 @@ import { Configuration } from '../../config/enums/config.keys';
   controllers: [AuthController],
   providers: [AuthService, JwtStrategy, ConfigService],
   exports: [PassportModule],
-  // exports: [JwtStrategy, PassportModule],
 })
 export class AuthModule {}
